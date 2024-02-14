@@ -245,6 +245,40 @@ body{
 .infoScreen{
   position: absolute;
   top: 65px;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
   display: none;
+  background-color: white;
+}
+
+.infoScreen ul li{
+  margin: 20px 30px;
+  padding: 10px 0px;
+ border-bottom: solid 0.5px lightgrey;
+ list-style: none;
+}
+.infoScreen h2{
+  margin: 0;
+  font-weight: 550;
+  color: #454444;
+  font-size: 22px;
+}
+.infoScreen h5{
+  font-size: 13px;
+}
+.infoScreen p , a, span{
+  font-size: 12px;
+}
+.infoScreen ul li h2,h5,p,a{
+  margin: 4px 0px;
+}
+.infoScreen a{
+  text-decoration: none;
+  color: #4286f4;
+}
+.emptyDiv{
+  background-color: white;
+  height: 150px;
 }
 

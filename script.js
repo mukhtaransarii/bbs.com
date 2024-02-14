@@ -1,10 +1,18 @@
- //homeScreen PROJECT LIST 
+//infoScreen Lesson List 2)
+let array = [
+    { Lnum : "Lesson 01" , Lname : "Web designing on Mobile" , Ldes : "Latest premium version Acode.apk" , Lsrc : "https://drive.google.com/file/d/1jwtFf7OWyDcwOxBfXvAm4iL3Oo4K4dEK/view?usp=drivesdk"},
+    { Lnum : "Lesson 02" , Lname : "Multiple Page Switch" , Ldes : "Using JavaScript Doms and addEventListener" , Lsrc : "https://drive.google.com/file/d/1jzN3ap_5lcDoIt8bGEx483qivri3U1S8/view?usp=drivesdk"},
+   
+  
+  ]
+
+
+ //homeScreen PROJECT LIST 1)
  let arr = [
       { Pnum : "Project 01", Pname : "LoginPage-V2 ", Preview : "https://mukhtaransarii.github.io/LoginPage-V2/", SourceCode : "https://drive.google.com/file/d/1aX7EV_JppozK6w9GLKzoarEqxwiTEK96/view?usp=drivesdk"},
       { Pnum : "Project 02", Pname : "Google Search Clone", Preview : "https://mukhtaransarii.github.io/google-clone/", SourceCode : "https://drive.google.com/file/d/1booFa8RGNCCiN0q-V6h3wcHgIfsjxCTi/view?usp=drivesdk"},
       { Pnum : "Project 03", Pname : "Dark Gradient Calculator v1", Preview : "https://mukhtaransarii.github.io/Calculator-V1/", SourceCode : "https://t.me/webdesign_bbs/3"},
       { Pnum : "Project 04", Pname : "LoginPage-V1", Preview : "https://mukhtaransarii.github.io/LoginPage-V1", SourceCode : "https://drive.google.com/file/d/1blep9PPPzYWOFDFcYu8EUoOztQTM5f1O/view?usp=drivesdk"},
-
       { Pnum : "Project 06", Pname : "Portfolio Website Responsive++", Preview : "https://mukhtaransarii.github.io/Portfolio-v1/", SourceCode : "https://t.me/webdesign_bbs/3"},
       { Pnum : "Project 07", Pname : "Google Store Clone", Preview : "https://mukhtaransarii.github.io/GoogleStore-clone/", SourceCode : "https://t.me/webdesign_bbs/3"},
       { Pnum : "Project 08", Pname : "Responsive Nav Bar", Preview : "", SourceCode : "https://drive.google.com/file/d/1dTq8leF6K4_P34pR-z-pKgiHF6TLPt7Y/view?usp=drivesdk"},
@@ -17,13 +25,8 @@
       { Pnum : "Project 15", Pname : "Restaurant Menu List with Search", Preview : "https://mukhtaransarii.github.io/restaurant.menulist/", SourceCode : "https://drive.google.com/file/d/1iB6mrd2JAsaX-o-8_VACHOIwtcyyMxqi/view?usp=drivesdk"},
       { Pnum : "Project 16", Pname : "BBS.COM", Preview : "https://mukhtaransarii.github.io/bbs.com/", SourceCode : "https://t.me/webdesign_bbs/3"},
    ]
-//declaration of variable 
-let srcBtn = document.querySelector(".fa-magnifying-glass")
-let cnlBtn = document.querySelector(".searchBar .fa-xmark")
-let searchBar = document.querySelector(".searchBar")
-let searchInput = document.querySelector(".searchBar input")
 
-
+//Project List projectScreen FUNCTION 1)
 var clutter = ""
 arr.forEach(function(elem,idx){
 	   clutter += `<li>
@@ -38,6 +41,31 @@ arr.forEach(function(elem,idx){
 document.querySelector(".projectScreen ul").innerHTML = clutter
 
 
+
+//Lesson List infoScreen FUNCTION 2)
+var plutter = ""
+  array.forEach(function(elem,idx){
+	   plutter += `<li>
+              <h2>${elem.Lnum}</h2>
+              <h5>${elem.Lname}</h5>
+              <p>${elem.Ldes}</p>
+              <a href="${elem.Lsrc}"><i class="fa-regular fa-file-lines"></i> Source Code</a> 
+            </li>`
+})
+document.querySelector(".infoScreen ul").innerHTML = plutter
+
+
+
+
+
+
+//declaration of variable 
+let srcBtn = document.querySelector(".fa-magnifying-glass")
+let cnlBtn = document.querySelector(".searchBar .fa-xmark")
+let searchBar = document.querySelector(".searchBar")
+let searchInput = document.querySelector(".searchBar input")
+
+
 //searchBar Block and none through search Icon and cancel btn
   srcBtn.addEventListener("click", function(){
   searchBar.style.display = "block"
@@ -49,10 +77,9 @@ cnlBtn.addEventListener("click", function(){
 
 
 //CODE OF SEARCH PROJECT 
-
 document.getElementById('searchInput').addEventListener('keyup', function() {
   const filter = this.value.toUpperCase();
-  const names = document.getElementById('namesList').getElementsByTagName('li');
+  const names = document.querySelector(".namesList").getElementsByTagName('li');
   
   for (let i = 0; i < names.length; i++) {
     const name = names[i].textContent.toUpperCase();
@@ -64,10 +91,11 @@ document.getElementById('searchInput').addEventListener('keyup', function() {
   }
 });
 
+
 //BOTTOM NAV BAAR CLICK FUNCTION
 let profileBtn = document.querySelector(".fa-user")
 let projectBtn = document.querySelector(".fa-file-code")
-let infoBtn = document.querySelector(".fa-circle-info")
+let infoBtn = document.querySelector(".fa-gear")
 let bottomBarBtn = document.querySelector(".bottomNav2 .fa-bars")
 
 profileBtn.addEventListener("click", function(){
