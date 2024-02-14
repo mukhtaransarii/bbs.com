@@ -49,7 +49,7 @@ var plutter = ""
               <h2>${elem.Lnum}</h2>
               <h5>${elem.Lname}</h5>
               <p>${elem.Ldes}</p>
-              <a href="${elem.Lsrc}"><i class="fa-regular fa-file-lines"></i>Resources</a> 
+              <a href="${elem.Lsrc}"><i class="fa-regular fa-file-lines"></i> Resources</a> 
             </li>`
 })
 document.querySelector(".infoScreen ul").innerHTML = plutter
