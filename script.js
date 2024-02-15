@@ -27,7 +27,7 @@ let array = [
       { Pnum : "Project 17", Pname : "Fee Management", Preview : "https://mukhtaransarii.github.io/fee.managment/", SourceCode : "https://drive.google.com/file/d/1kTd8v8Wgvzu10d1j8fuS8stQ3A221lCW/view?usp=drivesdk"},
    ]
 
- ]
+ 
 
 //Project List projectScreen FUNCTION 1)
 var clutter = ""
