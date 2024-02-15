@@ -24,7 +24,10 @@ let array = [
       { Pnum : "Project 14", Pname : "WhatsApp Redesign", Preview : "https://mukhtaransarii.github.io/whatsapp.clone/", SourceCode : "https://t.me/webdesign_bbs/3"},
       { Pnum : "Project 15", Pname : "Restaurant Menu List with Search", Preview : "https://mukhtaransarii.github.io/restaurant.menulist/", SourceCode : "https://drive.google.com/file/d/1iB6mrd2JAsaX-o-8_VACHOIwtcyyMxqi/view?usp=drivesdk"},
       { Pnum : "Project 16", Pname : "BBS.COM", Preview : "https://mukhtaransarii.github.io/bbs.com/", SourceCode : "https://t.me/webdesign_bbs/3"},
+      { Pnum : "Project 17", Pname : "Fee Management", Preview : "https://mukhtaransarii.github.io/fee.managment/", SourceCode : "https://drive.google.com/file/d/1kTd8v8Wgvzu10d1j8fuS8stQ3A221lCW/view?usp=drivesdk"},
    ]
+
+ ]
 
 //Project List projectScreen FUNCTION 1)
 var clutter = ""
