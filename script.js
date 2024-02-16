@@ -26,6 +26,7 @@ let array = [
       { Pnum : "Project 16", Pname : "BBS.COM", Preview : "https://mukhtaransarii.github.io/bbs.com/", SourceCode : "https://t.me/webdesign_bbs/3"},
       { Pnum : "Project 17", Pname : "Fee Management", Preview : "https://mukhtaransarii.github.io/fee.managment/", SourceCode : "https://drive.google.com/file/d/1kTd8v8Wgvzu10d1j8fuS8stQ3A221lCW/view?usp=drivesdk"},
       { Pnum : "Project 18", Pname : "Tic Tac Toe", Preview : "https://mukhtaransarii.github.io/tictactoe/", SourceCode : "https://drive.google.com/file/d/1lbs35h3VgUjSkWOgZ3g1zArBLI0fJOMA/view?usp=drivesdk"},
+      { Pnum : "Project 19", Pname : "Fan Speed", Preview : "https://mukhtaransarii.github.io/fan.speed/", SourceCode : "https://drive.google.com/file/d/1loSuJEV72xl9AsvV_Br3BKxPDnkDIm9g/view?usp=drivesdk"},
  
  ]
 
