@@ -2,7 +2,8 @@
 let array = [
     { Lnum : "Lesson 01" , Lname : "Web designing on Mobile" , Ldes : "Latest premium version Acode.apk" , Lsrc : "https://drive.google.com/file/d/1jwtFf7OWyDcwOxBfXvAm4iL3Oo4K4dEK/view?usp=drivesdk"},
     { Lnum : "Lesson 02" , Lname : "Multiple Page Switch" , Ldes : "Using JavaScript Doms and addEventListener" , Lsrc : "https://drive.google.com/file/d/1jzN3ap_5lcDoIt8bGEx483qivri3U1S8/view?usp=drivesdk"},
-   
+    { Lnum : "Lesson 03" , Lname : "Page hide and show" , Ldes : "Using Dom And Event" , Lsrc : "https://drive.google.com/file/d/1nOqlhiBSkqACsq7tznLn1F-Y5EFxHySU/view?usp=drivesdk"},
+    
   
   ]
 
